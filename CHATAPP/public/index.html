@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script async defer src="client.js"></script>
+    <title>Chat App</title>
+</head>
+<body>
+    <h1>Chat App</h1>
+    <div id="loginBox">
+        <input type="text" id="inputUsername" placeholder="Username">
+        <input type="text" type="password" id="inpPass" placeholder="Password">
+        <button id="btnStart">START</button>
+    </div>
+
+    <div id="chatBox">
+        <input type="text" id="inpToUser" placeholder="send to (default everyone)">
+        <input type="text" id="inpNewMsg" placeholder="new message">
+        <button id="btnSendMsg">SEND</button>
+        <ul id="ulMsgs"></ul>
+    </div>
+</body>
+</html>

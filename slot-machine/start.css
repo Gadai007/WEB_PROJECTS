@@ -1,0 +1,41 @@
+h1{
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50pt;
+    color: crimson;
+}
+
+.container{
+    padding: 10px;
+    margin: 500px;
+    align-content: center;
+}
+
+.btn {
+    margin: 50px;
+    background-color: peru;
+    color: white;
+    font-size: 30pt;
+    padding: 50px;
+    width: 200px;
+
+    border-radius: 10px;
+    box-shadow: gray 10px 10px 10px;
+    transition: 0.8s;
+    
+}
+
+.btn:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: gray 20px 20px 20px;
+    transition: 0.5s;
+}
+
+.btn:active {
+    transform: translate(5px, 5px);
+    background-color: yellow;
+    color: black;
+    box-shadow: gray 5px 5px 3px;
+    transition: 0.2s;
+}

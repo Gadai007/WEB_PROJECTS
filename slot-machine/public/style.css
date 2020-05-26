@@ -1,0 +1,48 @@
+:root{
+    --speed : 2;
+    
+}
+.container{
+    margin: 50px;
+    padding: 20px;
+    height: 300px;
+    width: 900px;
+    border: solid black 2px;
+    background-color: coral;
+    display: flex;
+}
+
+.box{
+    margin: 20px;
+    height: 250px;
+    width: 300px;
+    border: solid black 2px;
+    background-color: blanchedalmond;
+    overflow: hidden;
+}
+
+.value{
+    text-align: center;
+    font-size: 80pt;
+    line-height: 250px;
+    animation-name: spin;
+    animation-duration: calc(1s/var(--speed));
+    animation-iteration-count: 7;
+   
+}
+
+#btnChange{
+    height: 50px;
+    width: 50px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+@keyframes spin {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+}
