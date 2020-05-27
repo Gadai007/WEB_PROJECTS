@@ -34,12 +34,7 @@ route.post('/', async (req, res) => {
     return res.status(400).send({ error : "Need userId, title, body, postId to create a comment"})
   }
 
-  const comment = await addComment({
-    userId,
-    title,
-    body,
-    postId
-  })
+  const comment = await addComment(userId, title, body, postId)
   res.status(200).send(comment)
 })
 

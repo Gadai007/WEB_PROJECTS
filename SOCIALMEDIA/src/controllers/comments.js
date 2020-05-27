@@ -14,7 +14,7 @@ async function commentOfUser( id ){
 
     const userComments = await Comments.findAll({
         include : [ Users , Posts],
-        where : {userId : id, userId : username}
+        where : {userId : id}
     })
 
     return userComments
@@ -23,7 +23,7 @@ async function commentOfUser( id ){
 async function commentOfPost( id ){
     const postComments = await Comments.findAll({
         include : [ Users, Posts],
-        where : { postId : id, postId : username}
+        where : { postId : id}
     })
 
     return postComments
