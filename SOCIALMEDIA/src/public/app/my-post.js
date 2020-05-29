@@ -14,14 +14,19 @@ function myPosts() {
                   ${p.body.substr(0, 200)}
                   <a href="#">...read more</a>
                 </p>
-                <a href="#" class="card-link">Comment</a>
+                <a href="#" class="card-link" data-component="comment">Comment</a>
                 <a href="#" class="card-link">Like</a>
               </div>
             </div>
           </div>
-          
-          `)
+           `,
+           $('.card-body .card-link').click((event) => {
+            let commentUrl = `/components/${$(event.target).attr('data-component')}.html`
+            $('#content').load(commentUrl)
+          }))
         )
       }
     })
   }
+
+ 
