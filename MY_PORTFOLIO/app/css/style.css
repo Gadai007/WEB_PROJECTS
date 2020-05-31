@@ -1,0 +1,22 @@
+body{
+    min-height: 400vh;
+}
+.logo{
+    
+    /* font-size: large; */
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.cta{
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.striped{
+    height: 500px;
+    font-size: 15pt;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+}
+
