@@ -8,6 +8,7 @@ const route = Router()
 
 route.get('/', async (req, res) => {
   const posts = await findAllPosts(req.query)
+  
   res.status(200).send(posts)
 })
 
