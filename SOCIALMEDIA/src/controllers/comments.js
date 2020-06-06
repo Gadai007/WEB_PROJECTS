@@ -11,10 +11,11 @@ async function addComment( userId, title, body, postId ){
 }
 
 async function commentOfUser( id ){
-
+    let where = {}
+    if(id.userId){ where.userId = id.userId}
     const userComments = await Comments.findAll({
         include : [ Users , Posts],
-        where : {userId : id}
+        where 
     })
 
     return userComments

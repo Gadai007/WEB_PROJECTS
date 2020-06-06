@@ -21,6 +21,16 @@ function loadPosts() {
             $('.card-body .card-link').click((event) => {
               let commentUrl = `/components/${$(event.target).attr('data-component')}.html`
               $('#content').load(commentUrl)
+            }),
+            $('#comment-btn').click(() => {
+              let userId = JSON.parse(window.localStorage.user).id
+              let postId =p.id
+              let title = $('#c-title').val()
+              let body = $('#c-body').val()
+              $.post('/api/comments', { userId, postId, title, body}, () => {
+                $('#content').load('/components/all-posts.html')
+              })
+           
             }))
         )
       }
