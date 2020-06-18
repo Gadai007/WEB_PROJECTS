@@ -13,7 +13,7 @@ function loadPosts() {
                   <a href="#">...read more</a>
                 </p>
                 <a href="#" class="card-link" data-component="comment" post-component=${p.id}>Comment</a>
-                <a href="#" class="card-link">Like</a>
+                
               </div>
             </div>
           </div>

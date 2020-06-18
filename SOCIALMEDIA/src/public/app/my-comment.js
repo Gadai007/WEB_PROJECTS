@@ -16,7 +16,7 @@ function loadMyComments() {
                   <a href="#">...read more</a>
                 </p>
                 <a href="#" class="card-link">Comment</a>
-                <a href="#" class="card-link">Like</a>
+                
               </div>
             </div>
           </div>
