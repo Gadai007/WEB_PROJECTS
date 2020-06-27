@@ -3,7 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 require('dotenv/config')  //requiring the dotenv package
 const { postRoute } = require('./routes/posts')
-const cors = require('cors')
+const cors = require('cors') //it helps to run the rest api's
 
 const PORT = process.env.PORT || 1234
 

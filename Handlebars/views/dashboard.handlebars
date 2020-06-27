@@ -1,0 +1,12 @@
+{{#unless enabled}}
+    <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+{{/unless}}
+
+{{#with author}}
+    <h2>{{firstname}} {{lastname}}</h2>
+    <h2>{{project.name}}</h2>
+{{/with}}
